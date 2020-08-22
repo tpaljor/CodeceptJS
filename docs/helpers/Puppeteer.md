@@ -1162,15 +1162,16 @@ I.refreshPage();
 
 ### resizeWindow
 
-Resize the current window to provided width and height.
-First parameter can be set to `maximize`.
+Resize the current viewport to provided width and height.
+
+Unlike other drivers Puppeteer changes the size of a viewport, not the window! 
+Puppeteer does not control the window of a browser so it can't adjust its real size.
+It also can't maximize a window.
 
 #### Parameters
 
--   `width` **[number][10]** width in pixels or `maximize`.
--   `height` **[number][10]** height in pixels.Unlike other drivers Puppeteer changes the size of a viewport, not the window!
-    Puppeteer does not control the window of a browser so it can't adjust its real size.
-    It also can't maximize a window.
+-   `width` **[number][10]** width in pixels.
+-   `height` **[number][10]** height in pixels.
 
 ### rightClick
 
